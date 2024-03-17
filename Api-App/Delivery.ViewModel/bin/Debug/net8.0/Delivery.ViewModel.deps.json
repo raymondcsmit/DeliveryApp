@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Delivery.ViewModel/1.0.0": {
+        "runtime": {
+          "Delivery.ViewModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Delivery.ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

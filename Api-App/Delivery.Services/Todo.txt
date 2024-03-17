@@ -1,0 +1,14 @@
+﻿Create order
+With Order Specify Scheduler
+When Saving order with Secduler make deliveries
+
+
+User make order, we will check whether order is simple order or subscription
+One entry of order will be made.
+Against One subscription as per the period and  end time number of Deliveries will be created
+All these deliveries will be bind to single Order
+If user make changes, than new order will be made and that order will be bind to this delivery
+
+Invite your friend and get 10% off on your next box? 
+What if he invite more than 10 friends? what will happen to the discount then? does the next box will be free?
+

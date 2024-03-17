@@ -1,0 +1,32 @@
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\DeliveryApp.DAL.deps.json
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\DeliveryApp.DAL.dll
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\DeliveryApp.DAL.pdb
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\Core.dll
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\Core.pdb
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.csproj.AssemblyReference.cache
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.AssemblyInfoInputs.cache
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.AssemblyInfo.cs
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.csproj.CoreCompileInputs.cache
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.sourcelink.json
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\Delivery.0A02D7DD.Up2Date
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.dll
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\refint\DeliveryApp.DAL.dll
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.pdb
+F:\Abbas Code\Delivery App\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\ref\DeliveryApp.DAL.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\DeliveryApp.DAL.deps.json
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\DeliveryApp.DAL.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\DeliveryApp.DAL.pdb
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\Core.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\bin\Debug\net8.0\Core.pdb
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.csproj.AssemblyReference.cache
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.AssemblyInfoInputs.cache
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.AssemblyInfo.cs
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.csproj.CoreCompileInputs.cache
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.sourcelink.json
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\Delivery.0A02D7DD.Up2Date
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\refint\DeliveryApp.DAL.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\DeliveryApp.DAL.pdb
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\DeliveryApp.DAL\obj\Debug\net8.0\ref\DeliveryApp.DAL.dll

@@ -1,0 +1,26 @@
+F:\Abbas Code\Delivery App\Backend-App\Core\bin\Debug\net8.0\Core.deps.json
+F:\Abbas Code\Delivery App\Backend-App\Core\bin\Debug\net8.0\Core.dll
+F:\Abbas Code\Delivery App\Backend-App\Core\bin\Debug\net8.0\Core.pdb
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\Core.sourcelink.json
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\Core.dll
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\refint\Core.dll
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\Core.pdb
+F:\Abbas Code\Delivery App\Backend-App\Core\obj\Debug\net8.0\ref\Core.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\bin\Debug\net8.0\Core.deps.json
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\bin\Debug\net8.0\Core.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\bin\Debug\net8.0\Core.pdb
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\Core.sourcelink.json
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\Core.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\refint\Core.dll
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\Core.pdb
+F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Core\obj\Debug\net8.0\ref\Core.dll
