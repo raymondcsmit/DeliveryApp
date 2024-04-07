@@ -1,0 +1,28 @@
+### Variables
+@DeliveryApi_HostAddress = https://localhost:44331/api
+
+### 
+GET {{DeliveryApi_HostAddress}}/Lookup/GetItems
+Accept: application/json
+
+### 
+# @name login
+POST {{DeliveryApi_HostAddress}}/Account/SignIn 
+Accept: application/json
+Content-Type: application/json
+
+{
+    "username": "waqarhabib",
+    "password": "Admin@123",
+    "rememberMe": true
+}
+
+### 
+@token = {{login.response.body.data.token}}
+###
+
+GET {{DeliveryApi_HostAddress}}/Deliveries/GetUpcoming
+Authorization: bearer {{token}}
+
+
+ 

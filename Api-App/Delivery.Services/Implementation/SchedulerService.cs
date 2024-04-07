@@ -118,8 +118,24 @@ namespace Delivery.Services.Implementation
             catch (Exception ex)
             {
                 transaction?.Rollback();
-                return ResponseFactory.CreateError(ex, System.Net.HttpStatusCode.FailedDependency);
+
+                // Log the detailed exception information here, including TargetSite if necessary
+                // _logger.LogError(ex, "Error subscribing: {Message}", ex.Message);
+
+                // Create a custom response that doesn't include non-serializable properties
+                var errorResponse = ResponseFactory.CreateError(
+                    $"An error occurred while processing your request: {ex.Message}",
+                    System.Net.HttpStatusCode.InternalServerError
+                );
+
+                return errorResponse;
             }
+
+            //catch (Exception ex)
+            //{
+            //    transaction?.Rollback();
+            //    return ResponseFactory.CreateError(ex, System.Net.HttpStatusCode.FailedDependency);
+            //}
         }
         private List<DeliveryDetails> GenerateDeliveryRequests(SubScribeVM subscription, Order objOrder)
         {

@@ -1,6 +1,9 @@
 import { NgClass, NgFor } from '@angular/common';
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Router } from '@angular/router';
@@ -31,7 +34,7 @@ import { Subject, takeUntil } from 'rxjs';
     ],
     encapsulation: ViewEncapsulation.None,
     standalone   : true,
-    imports      : [MatIconModule, FuseDrawerComponent, MatButtonModule, NgFor, NgClass, MatTooltipModule],
+    imports      : [MatIconModule, FuseDrawerComponent, MatButtonModule, NgFor, NgClass, MatTooltipModule,FormsModule,MatFormFieldModule,MatSelectModule],
 })
 export class SettingsComponent implements OnInit, OnDestroy
 {
@@ -41,7 +44,23 @@ export class SettingsComponent implements OnInit, OnDestroy
     theme: string;
     themes: Themes;
     private _unsubscribeAll: Subject<any> = new Subject<any>();
-
+    fontFamilies: string[] = [
+        // 'IBM Plex Mono',
+        'Station',
+        'Arial',
+        'Verdana',
+        'Helvetica',
+        'Times New Roman',
+        'Courier New',
+        'Georgia',
+        'Palatino',
+        'Garamond',
+        'Bookman',
+        'Comic Sans MS',
+        'Trebuchet MS',
+      ];
+    
+      selectedFontFamily: string = ''; // Initialize with an empty value
     /**
      * Constructor
      */
@@ -61,6 +80,7 @@ export class SettingsComponent implements OnInit, OnDestroy
      */
     ngOnInit(): void
     {
+        //  this.changeFontFamily();
         // Subscribe to config changes
         this._fuseConfigService.config$
             .pipe(takeUntil(this._unsubscribeAll))
@@ -70,7 +90,10 @@ export class SettingsComponent implements OnInit, OnDestroy
                 this.config = config;
             });
     }
-
+    changeFontFamily() {
+        document.body.style.fontFamily = this.selectedFontFamily;
+        // document.documentElement.style.fontFamily = this.fontFamily;
+      }
     /**
      * On destroy
      */

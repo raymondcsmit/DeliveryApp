@@ -1,13 +1,16 @@
 ﻿using Core;
 using Delivery.Services.Abstract;
 using DeliveryApp.DAL.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DeliveryApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DeliveriesController : ControllerBase
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    public class DeliveriesController : BaseController
     {
         private readonly IDeliveryService _deliveryService;
 
@@ -16,21 +19,36 @@ namespace DeliveryApi.Controllers
             _deliveryService = deliveryService;
         }
 
-        [HttpGet]
+        [HttpGet(nameof(GetAllDeliveries))]
         public async Task<ResponseResult> GetAllDeliveries(int pageNumber = 1, int pageSize = 10)
         {
             return await _deliveryService.GetAllDeliveriesAsync(pageNumber, pageSize);
 
         }
+        [HttpGet(nameof(GetUpcoming))]
+        public async Task<ResponseResult> GetUpcoming(int count = 3)
+        {
+            int userId = GetUserID();
+            return await _deliveryService.GetUpcoming(count, userId);
 
-        [HttpGet("{id}")]
+        }
+        [HttpGet(nameof(GetPast))]
+        public async Task<ResponseResult> GetPast(int count = 3)
+        {
+            int userId = GetUserID();
+            return await _deliveryService.GetPast(count, userId);
+
+        }
+
+        [HttpGet(nameof(GetDeliveryById))]
+        //[HttpGet("{id}")]
         public async Task<ResponseResult> GetDeliveryById(int id)
         {
             return await _deliveryService.GetDeliveryByIdAsync(id);
 
         }
 
-        [HttpPost]
+        [HttpPost(nameof(AddDelivery))]
         public async Task<ResponseResult> AddDelivery([FromBody] DeliveryDetails delivery)
         {
             if (!ModelState.IsValid)
@@ -41,7 +59,8 @@ namespace DeliveryApi.Controllers
 
         }
 
-        [HttpPut("{id}")]
+        //[HttpPut("{id}")]
+        [HttpPut(nameof(UpdateDelivery))]
         public async Task<ResponseResult> UpdateDelivery(int id, [FromBody] DeliveryDetails delivery)
         {
             if (id != delivery.DeliveryDetailsId)
@@ -58,7 +77,8 @@ namespace DeliveryApi.Controllers
 
         }
 
-        [HttpDelete("{id}")]
+        //[HttpDelete("{id}")]
+        [HttpDelete(nameof(DeleteDelivery))]
         public async Task<ResponseResult> DeleteDelivery(int id)
         {
 

@@ -4,7 +4,6 @@ import { AuthUtils } from 'app/core/auth/auth.utils';
 import { UserService } from 'app/core/user/user.service';
 import { catchError, Observable, of, switchMap, throwError } from 'rxjs';
 import { ResponseResult } from '../respons.types';
-import { Token } from '@angular/compiler';
 import { SecurityToken } from '../token/token.type';
 
 @Injectable({providedIn: 'root'})
@@ -13,11 +12,15 @@ export class AuthService
     private _authenticated: boolean = false;
     private _httpClient = inject(HttpClient);
     private _userService = inject(UserService);
+
     baseUrl = 'https://localhost:44331/';
     // -----------------------------------------------------------------------------------------------------
     // @ Accessors
     // -----------------------------------------------------------------------------------------------------
 
+    /**
+     * Setter & getter for access token
+     */
     set accessToken(token: string)
     {
         localStorage.setItem('accessToken', token);
@@ -32,31 +35,54 @@ export class AuthService
     // @ Public methods
     // -----------------------------------------------------------------------------------------------------
 
+    /**
+     * Forgot password
+     *
+     * @param email
+     */
     forgotPassword(email: string): Observable<any>
     {
-        return this._httpClient.post(this.baseUrl+'api/auth/forgot-password', email);
+        return this._httpClient.post('api/auth/forgot-password', email);
     }
 
+    /**
+     * Reset password
+     *
+     * @param password
+     */
     resetPassword(password: string): Observable<any>
     {
-        return this._httpClient.post(this.baseUrl+'api/auth/reset-password', password);
+        return this._httpClient.post('api/auth/reset-password', password);
     }
 
+    /**
+     * Sign in
+     *
+     * @param credentials
+     */
     signIn(credentials: { username: string; password: string }): Observable<any>
     {
         // Throw error, if the user is already logged in
         if ( this._authenticated )
         {
-            return throwError(() => new Error('User is already logged in.'));
-            //return throwError('User is already logged in.');
+            return throwError('User is already logged in.');
         }
+       // return this._httpClient.post(this.baseUrl+'api/Account/SignIn', credentials).pipe(
         return this._httpClient.post<ResponseResult<SecurityToken>>(this.baseUrl+'api/Account/SignIn', credentials).pipe(
           
             switchMap((response: ResponseResult<SecurityToken>) =>
             {
+                console.log(response);
+                // Store the access token in the local storage
                 this.accessToken = response.data.token;
+
+                // Set the authenticated flag to true
                 this._authenticated = true;
+
+                // Store the user on the user service
                 this._userService.user = response.data.user;
+
+                // Return a new observable with the response
                 return of(response);
             }),
         );
@@ -122,9 +148,9 @@ export class AuthService
      *
      * @param user
      */
-    signUp(user: { name: string; email: string; password: string; company: string }): Observable<any>
+    signUp(user: { name: string; username: string; email: string; password: string }): Observable<any>
     {
-        return this._httpClient.post('api/auth/sign-up', user);
+        return this._httpClient.post(this.baseUrl+'api/Account/Register', user);
     }
 
     /**

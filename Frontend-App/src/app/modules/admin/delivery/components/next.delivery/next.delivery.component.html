@@ -1,0 +1,30 @@
+<!-- next-delivery.component.html -->
+<div class="delivery-container bg-gray-200">
+  <h2>Your next delivery</h2>
+  <a href="#" class="edit-link">Edit</a>
+  
+  <div class="delivery-info">
+    <div class="delivery-number">Delivery No{{ delivery.deliveryNumber }}</div>
+    <div class="delivery-date-time">
+      <strong>Delivery date and time:</strong>
+      <p>{{ delivery.deliveryDateTime | date: 'EEEE, MMM d, y' }}</p>
+      
+      <p>{{ delivery.deliveryDateTime | date: 'HH:mm' }}-{{ delivery.deliveryDateTime | date: 'HH:mm' : '+0000' }}
+      </p>
+    </div>
+    <div class="delivery-address">
+      <strong>Delivery address:</strong>
+      <p>{{ delivery.deliveryAddress }}</p>
+    </div>
+    <div class="courier-name">
+      <strong>Courier:</strong>
+      <p>{{ delivery.courierName }}</p>
+    </div>
+    <div class="items">
+      <strong>Items:</strong>
+      <ul>
+        <li *ngFor="let item of delivery.items">{{ item.name }} x{{ item.quantity }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

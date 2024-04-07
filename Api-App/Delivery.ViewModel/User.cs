@@ -14,7 +14,10 @@ namespace Delivery.ViewModel
     public class RegisterViewModel
     {
         [Required]
-        public string UserName { get; set; }
+        public string Name { get; set; }
+
+
+        public string UserName { get { return Email; } }
 
         [Required]
         [EmailAddress]
@@ -24,11 +27,13 @@ namespace Delivery.ViewModel
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Required]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+
+
+
         [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
 
         // Additional fields as needed
     }
+
 }

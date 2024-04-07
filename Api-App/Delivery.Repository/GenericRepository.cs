@@ -89,6 +89,47 @@ namespace Delivery.Repository
 
             return await transaction.Connection.QueryAsync<T>(query, parameters, transaction);
         }
+
+        public async Task<IEnumerable<T>> GetTop(Dictionary<string, object> filters, string orderByColumn = null, string orderByDirection = "ASC")
+        {
+            var columns = GetColumns();
+            var whereClauses = new List<string>();
+            var parameters = new DynamicParameters();
+
+            foreach (var filter in filters)
+            {
+                var columnName = _columnMappingProvider.GetColumnName(typeof(T).Name, filter.Key);
+                // Ensure proper column name mapping and prevent SQL injection
+                if (!string.IsNullOrWhiteSpace(columnName) && filter.Value != null)
+                {
+                    whereClauses.Add($"{columnName} = @{filter.Key}");
+                    parameters.Add($"@{filter.Key}", filter.Value);
+                }
+            }
+
+            var whereClause = whereClauses.Any() ? $"WHERE {string.Join(" AND ", whereClauses)}" : string.Empty;
+
+            // Initialize the orderByClause to an empty string
+            var orderByClause = string.Empty;
+            if (!string.IsNullOrWhiteSpace(orderByColumn))
+            {
+                var orderColumn = _columnMappingProvider.GetColumnName(typeof(T).Name, orderByColumn);
+                // Ensure the column name for ordering is valid to prevent SQL injection
+                if (!string.IsNullOrWhiteSpace(orderColumn))
+                {
+                    orderByClause = $"ORDER BY {orderColumn} {orderByDirection}";
+                }
+            }
+
+            // Modify the query to include ORDER BY and limit the results to top 4
+            // This is for SQL Server, adjust the LIMIT clause based on your database (e.g., "LIMIT 4" for MySQL or PostgreSQL)
+            var query = $"SELECT TOP 4 {columns} FROM {_tableName} {whereClause} {orderByClause}";
+            using var connection = _context.CreateConnection();
+            return await connection.QueryAsync<T>(query, parameters);
+        }
+
+
+
         public async Task<IEnumerable<T>> GetByAsync(Dictionary<string, object> filters)
         {
             using var connection = _context.CreateConnection();
@@ -112,6 +153,43 @@ namespace Delivery.Repository
 
             return await connection.QueryAsync<T>(query, parameters);
         }
+        public async Task<IEnumerable<TFirst>> ExecuteQueryMultiMappingAsync<TFirst, TSecond, TKey>(
+     string query,
+     Func<TFirst, TSecond, TKey, TFirst> map,
+     object parameters,
+     string splitOn,
+     string keyPropertyName)
+        {
+            using var connection = _context.CreateConnection();
+            var resultDictionary = new Dictionary<TKey, TFirst>();
+
+            await connection.QueryAsync<TFirst, TSecond, TFirst>(
+                query,
+                (first, second) =>
+                {
+                    // Use reflection to get the key property
+                    var keyProperty = typeof(TFirst).GetProperty(keyPropertyName);
+                    if (keyProperty == null)
+                        throw new InvalidOperationException($"Property {keyPropertyName} not found on type {typeof(TFirst).Name}.");
+
+                    var key = (TKey)keyProperty.GetValue(first);
+                    if (!resultDictionary.TryGetValue(key, out var firstEntry))
+                    {
+                        firstEntry = first;
+                        resultDictionary.Add(key, firstEntry);
+                    }
+
+                    map(firstEntry, second, key);
+                    return firstEntry;
+                },
+                parameters,
+                splitOn: splitOn
+            );
+
+            return resultDictionary.Values;
+        }
+
+
         public async Task<IEnumerable<TResult>> ExecuteQueryAsync<TResult>(string query, object parameters = null)
         {
             using var connection = _context.CreateConnection();

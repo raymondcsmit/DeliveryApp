@@ -2397,11 +2397,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Delivery.Repository\\Delivery.Repository.csproj",
+      "projectUniqueName": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Delivery.Repository\\Delivery.Repository.csproj",
       "projectName": "Delivery.Repository",
-      "projectPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Delivery.Repository\\Delivery.Repository.csproj",
+      "projectPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Delivery.Repository\\Delivery.Repository.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Delivery.Repository\\obj\\",
+      "outputPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Delivery.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -2425,11 +2425,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Core\\Core.csproj": {
-              "projectPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Core\\Core.csproj"
+            "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Core\\Core.csproj": {
+              "projectPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Core\\Core.csproj"
             },
-            "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj": {
-              "projectPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj"
+            "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj": {
+              "projectPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj"
             }
           }
         }

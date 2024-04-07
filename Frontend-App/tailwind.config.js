@@ -10,7 +10,8 @@ const generatePalette = require(path.resolve(__dirname, ('src/@fuse/tailwind/uti
  * Tailwind-like color palettes automatically
  */
 const customPalettes = {
-    brand: generatePalette('#2196F3')
+    // brand: generatePalette('#2196F3')
+    brand: generatePalette('#386082')
 };
 
 /**
@@ -57,7 +58,7 @@ const themes = {
     },
     'amber' : {
         primary: colors.amber
-    }
+    },
 };
 
 /**

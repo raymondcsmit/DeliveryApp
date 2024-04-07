@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj": {}
+    "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj": {}
   },
   "projects": {
-    "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Core\\Core.csproj": {
+    "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Core\\Core.csproj",
+        "projectPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Core\\obj\\",
+        "outputPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -85,14 +85,14 @@
         }
       }
     },
-    "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj": {
+    "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj",
+        "projectUniqueName": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj",
         "projectName": "DeliveryApp.DAL",
-        "projectPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj",
+        "projectPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\DeliveryApp.DAL\\DeliveryApp.DAL.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\DeliveryApp.DAL\\obj\\",
+        "outputPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\DeliveryApp.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -116,8 +116,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Core\\Core.csproj": {
-                "projectPath": "F:\\Abbas Code\\Delivery App\\Delivery App Solution\\Backend-App\\Core\\Core.csproj"
+              "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Core\\Core.csproj": {
+                "projectPath": "D:\\SourceRepo\\GitRepo\\TheDeliveryAPI\\Api-App\\Core\\Core.csproj"
               }
             }
           }

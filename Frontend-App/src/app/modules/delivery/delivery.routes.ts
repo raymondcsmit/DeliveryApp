@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { DeliveryComponent } from './delivery.component';
+import { MainComponent } from 'app/modules/delivery/main/main.component';
 
 export default [
     {
         path     : '',
-        component: DeliveryComponent,
+        component: MainComponent,
     },
 ] as Routes;

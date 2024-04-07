@@ -5,6 +5,9 @@ namespace Delivery.Services.Abstract
 {
     public interface IDeliveryService
     {
+        Task<ResponseResult> GetUpcoming(int count, int userId);
+        Task<ResponseResult> GetPast(int count, int userId);
+
         Task<ResponseResult> GetAllDeliveriesAsync(int pageNumber, int pageSize);
         Task<ResponseResult> GetDeliveryByIdAsync(int id);
         Task<ResponseResult> AddDeliveryAsync(DeliveryDetails product);

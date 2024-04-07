@@ -1,24 +1,12 @@
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.deps.json
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.dll
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.pdb
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.AssemblyInfoInputs.cache
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.AssemblyInfo.cs
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.csproj.CoreCompileInputs.cache
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.sourcelink.json
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.dll
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\refint\Delivery.ViewModel.dll
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.pdb
-F:\Abbas Code\Delivery App\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\ref\Delivery.ViewModel.dll
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.deps.json
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.dll
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.pdb
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.AssemblyInfoInputs.cache
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.AssemblyInfo.cs
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.csproj.CoreCompileInputs.cache
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.sourcelink.json
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.dll
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\refint\Delivery.ViewModel.dll
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.pdb
-F:\Abbas Code\Delivery App\Delivery App Solution\Backend-App\Delivery.ViewModel\obj\Debug\net8.0\ref\Delivery.ViewModel.dll
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.deps.json
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.dll
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\bin\Debug\net8.0\Delivery.ViewModel.pdb
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.AssemblyInfoInputs.cache
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.AssemblyInfo.cs
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.csproj.CoreCompileInputs.cache
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.sourcelink.json
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.dll
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\refint\Delivery.ViewModel.dll
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\Delivery.ViewModel.pdb
+D:\SourceRepo\GitRepo\TheDeliveryAPI\Api-App\Delivery.ViewModel\obj\Debug\net8.0\ref\Delivery.ViewModel.dll

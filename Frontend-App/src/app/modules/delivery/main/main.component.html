@@ -1,0 +1,20 @@
+<div class="flex flex-col flex-auto min-w-0">
+    <!-- Main -->
+    <div class="flex-auto p-6 sm:p-10">
+        <h2 class="text-5xl font-semibold tracking-tight leading-8">Deliveries</h2>
+ 
+        <div class="flex">
+            <div class="w-3/5 p-4">
+              <!-- Content for the first column -->
+              <next-delivery></next-delivery>
+            </div>
+            <div class="w-3/5 p-4">
+                <!-- Content for the second column --> 
+                <list-delivery [deliveries]="upcomingDeliveries" header="Upcoming deliveries"></list-delivery>  
+                <br>
+                <list-delivery [deliveries]="pastDeliveries" [showEdit]="false" header="Past deliveries"></list-delivery>  
+            </div>
+          </div> 
+    </div>
+
+</div>

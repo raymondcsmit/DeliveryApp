@@ -1,0 +1,48 @@
+/* next-delivery.component.scss */
+.delivery-container {
+  background: #FFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .edit-link {
+    float: right;
+    text-decoration: none;
+    // Add more styles
+  }
+
+  .delivery-info {
+    // Add styles for the layout
+    
+    .delivery-number {
+      margin-top: 10px;
+    }
+
+    .delivery-date-time, .delivery-address, .courier-name {
+      margin-top: 10px;
+      
+      strong {
+        display: block;
+      }
+    }
+
+    .items {
+      margin-top: 10px;
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+        
+        li {
+          // Add more styles
+        }
+      }
+    }
+  }
+  
+  // Add more styles to match the look in the image
+}
